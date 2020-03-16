@@ -1,0 +1,953 @@
+{
+    "formControls": {
+        "title": {
+            "value": "",
+            "label": "Title",
+            "tools": "Hello",
+            "pic": "/littleHouse.PNG",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "choices": [
+                "Please Select",
+                "Bishop",
+                "Brother",
+                "Dean",
+                "Dr",
+                "Father",
+                "Lady",
+                "Miss",
+                "Mr",
+                "Mrs",
+                "Ms",
+                "Other",
+                "Professor",
+                "Rev",
+                "Sir",
+                "Sister",
+                "Sr"
+            ]
+        },
+        "firstName": {
+            "value": "",
+            "label": "First Name",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "minLength": 2,
+                "isRequired": true
+            }
+        },
+        "surname": {
+            "value": "",
+            "label": "Surname",
+            "valid": false,
+            "touched": false,
+            "className": "form-control",
+            "validationRules": {
+                "isRequired": true,
+                "minLength": 2
+            }
+        },
+        "dateOfBirth": {
+            "value": "",
+            "label": "Date of Birth",
+            "valid": false,
+            "touched": false,
+            "className": "form-control",
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "day" : [
+                "Day",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31"
+            ],
+            "month" : [
+                "Month",
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "June",
+                "July",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec"
+            ],
+            "year" : [
+                "Year",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010"
+            ]
+        },
+        "gender": {
+            "value": "",
+            "label": "Gender",
+            "valid": false,
+            "touched": false,
+            "className": "form-control",
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "choices" : [
+                "Please Select",
+                "Female",
+                "Male"
+            ]
+        },
+        "maritalStatus": {
+            "value": "",
+            "label": "Marital Status",
+            "valid": false,
+            "touched": false,
+            "className": "form-control",
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "choices" : [
+                "Please Select",
+                "Common Law Spouse",
+                "Divorced",
+                "Married",
+                "Separated",
+                "Single",
+                "Unknown",
+                "Widowed"
+            ]
+        },
+        "policyStartDate": {
+            "value": "",
+            "label": "Policy Start Date",
+            "valid": false,
+            "touched": false,
+            "className": "form-control",
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "month" : [
+                "Month",
+                "Jan",
+                "Feb",
+                "Mar"
+            ],
+            "year" : [
+                "Year",
+                "2020"
+            ]
+        },
+        "propertyType": {
+            "value": "",
+            "label": "Property Type",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "choices" : [
+                "Please Select",
+                "Bungalow",
+                "Country Mansion",
+                "Detached House",
+                "Farm House",
+                "Flat",
+                "Maisonette",
+                "Purpose Built Apartment",
+                "Semi Detached House",
+                "Terraced House"
+            ]
+        },
+        "coverType" : {
+            "value": "",
+            "label": "Cover Type",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "choices" : [
+                "Please Select",
+                "Under Construction",
+                "Caravan - Family Use",
+                "Caravan - Let Out",
+                "Log Cabin - Holiday Home",
+                "Log Cabin - Let Out",
+                "Log Cabin - Owner Occupied",
+                "Holiday Home - Family Use",
+                "Holiday Home - Let Out",
+                "Main Residence - Awaiting Occupency",
+                "Mobile Home - Family Use",
+                "Mobile Home - Let Out",
+                "Owner Occupied",
+                "Rented - 1 Person",
+                "Rented - 2 People",
+                "Rented - 3 People",
+                "Rented - 4 People",
+                "Rented - 5 People",
+                "Rented - 6 People",
+                "Rented - 7 People",
+                "Rented - 8 People",
+                "Rented - 9 People",
+                "Rented - 10 People",
+                "Rented - Couple",
+                "Rented - Family",
+                "Rented - Students",
+                "Unoccupied",
+                "Unspecified"
+            ]
+        },
+        "yearBuilt" : {
+            "value": "",
+            "label": "Year Built",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "helpTextTitle": "Year Built",
+            "helpText": "The year that the property was built"
+        },
+        "subsidence": {
+            "value": "",
+            "label": "Is there a history of subsidence in your area?",
+            "options" : [
+                {
+                    "value": 0,
+                    "displayValue": "No"
+                }
+            ],
+            "helpTextTitle": "Definition of Subsidence",
+            "helpText": "Subsidence is the downward movement of the site on which a building stands, where the soil beneath the building's foundations is unstable."
+        },
+        "flooding": {
+            "value": "",
+            "label": "Is there a history of flooding in your area?",
+            "options" : [
+                {
+                    "value": 0,
+                    "displayValue": "No"
+                }
+            ]
+        },
+        "basement": {
+            "value": "",
+            "label": "Does the property have a basement?",
+            "options" : [
+                {
+                    "value": 0,
+                    "displayValue": "No"
+                }
+            ]
+        },
+        "employmentStatus" : {
+            "value": "",
+            "label": "Employment Status",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "choices" : [
+                "Please Select",
+                "Company Director",
+                "Employed",
+                "Household Duties",
+                "Independent Means",
+                "Retired",
+                "Self Employed",
+                "Student",
+                "Unemployed",
+                "Unknown",
+                "Voluntary"
+                ]
+        },
+        "occupation" : {
+            "value": "",
+            "label": "Occupation",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "choices" : [
+                "Please Select",
+                "Abattoir Worker",
+                "Accommodation Officer",
+                "Account Executive",
+                "Account Manager",
+                "Accountant",
+                "Accountant - Chartered or Certified",
+                "Accounts Assistant",
+                "Accounts Manager",
+                "Accounts Staff",
+                "Acoustic Engineer"
+            ]
+        },
+        "telephone": {
+            "value": "",
+            "label": "Telephone",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "minLength": 2,
+                "isRequired": true,
+                "isDropdown" : true
+            }
+        },
+        "email": {
+            "value": "",
+            "label": "Email",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "minLength": 2,
+                "isRequired": true,
+                "isEmail": true
+            }
+        },
+        "convictions": {
+            "value": "",
+            "label": "Do you have any non-motoring convictions?",
+            "options" : [
+                {
+                    "value": 1,
+                    "displayValue": "Yes"
+                }
+            ]
+        },
+        "firstBuyer": {
+            "value": "",
+            "label": "Are you a first time buyer?",
+            "options" : [
+                {
+                    "value": 1,
+                    "displayValue": "Yes"
+                }
+            ]
+        },
+        "securityAlarm" : {
+            "value": "",
+            "label": "Security Alarm",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "choices" : [
+                "Please Select",
+                "NSAI Approved Installer/EN50131 Standard/Connected to CMS",
+                "NSAI Approved Installer/EN50131 Standard",
+                "EN50131 Standard/Connected to CMS",
+                "EN50131 Standard/Not Connected to CMS",
+                "Other Working Alarm",
+                "House has no burgler alarm"
+            ],
+            "helpTextTitle": "Security Alarm",
+            "helpText": "Do you have a Burgler Alarm on your property? The EN50131 was previously known as IS199. CMS is an abbreviation for central monitoring system (e.g. Eircom Phone Watch)"
+        },
+        "bedrooms" : {
+            "value": "",
+            "label": "Bedrooms",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "choices" : [
+                "Please Select",
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+            ]
+        },
+        "bathrooms" : {
+            "value": "",
+            "label": "Bathrooms",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            }
+        },
+        "roofConstruction" : {
+            "value": "",
+            "label": "Roof Construction",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "choices" : [
+                "Please Select",
+                "100% Standard",
+                "Asbestos",
+                "Asphalt",
+                "Corrugated Iron",
+                "Felt On Timber",
+                "Fibre Glass",
+                "Glass",
+                "Metal",
+                "Not Listed",
+                "Plastic",
+                "Shingle",
+                "Stramit",
+                "Thatch Fibre",
+                "Thatch Reed",
+                "Timber",
+                "Turnerised",
+                "Unknown",
+                "Woodwork Construction"
+            ],
+            "helpTextTitle": "Roof Construction",
+            "helpText": "Refers to the type of construction of buildings proposed for insurance. Normally means walls of concrete or stone, and roof of slate, tiles, or sometimes steel construction. It is essential that full details of construction must be advised to the broker or insurer, especially any details of any felt or other flat roof or non-standard construction"
+        },
+        "propertyOccupied": {
+            "value": "",
+            "label": "Is the property occupied during daytime hours?",
+            "options" : [
+                {
+                    "value": 0,
+                    "displayValue": "No"
+                }
+            ]
+        },
+        "addressLine1" : {
+            "value": "",
+            "label": "Address Line 1",
+            "placeholder": "Address Line 1",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "minLength": 1,
+                "isRequired": true
+            }
+        },
+        "addressLine2": {
+            "value": "",
+            "label": "Address Line 2",
+            "placeholder": "* Optional"
+        },
+        "county": {
+            "value": "",
+            "label": "Property Location: County",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown": true,
+                "isRequired": true
+            },
+            "choices": [
+                "Please Select",
+                "County Carlow"
+            ]
+        },
+        "town": {
+            "value": "",
+            "label": "Property Location: Town",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown": true,
+                "isRequired": true
+            },
+            "choices": [
+                "Please Select",
+                "Ardattin"
+            ]
+        },
+        "addressResults": {
+            "value": "",
+            "label": "Address Results",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown": true,
+                "isRequired": true
+            },
+            "choices": [
+                "Please Select",
+                "Other address - Not on the list",
+                "8 Connawood Drive, Bray, Co. Dublin"
+            ]
+        },
+        "alterAddress": {
+            "value": "",
+            "label": "Enter Alternative Address?",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown": true,
+                "isRequired": true
+            },
+            "choices": [
+                "Please Select",
+                "Yes",
+                "No"
+            ]
+        },
+        "insured": {
+            "value": "",
+            "label": "Previously Or Currently Insured?",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown": true,
+                "isRequired": true
+            },
+            "choices": [
+                "Please Select",
+                "Yes",
+                "No"
+            ]
+        },
+        "insurer": {
+            "value": "",
+            "label": "Insurer",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown": true,
+                "isRequired": true
+            },
+            "choices": [
+                "Please Select",
+                "123.ie",
+                "AIG",
+                "Allianz",
+                "ARB Underwriting",
+                "Asgard",
+                "Aviva",
+                "AXA Insurance",
+                "Benchmark Underwriting",
+                "Chubb Insurance",
+                "Cigna Insurance",
+                "CoverCentre",
+                "Crest",
+                "DAS",
+                "Dolmen",
+                "Ecclesiastical",
+                "Europa General",
+                "FBD Insurance",
+                "Finsure",
+                "First Ireland",
+                "Generali Insurance",
+                "Great Lakes",
+                "Hastings & Co.",
+                "Hickey Clarke & Langan",
+                "ICI",
+                "Inov8",
+                "JR Clare"
+            ]
+        },
+        "policyNumber": {
+            "value": "",
+            "label": "Policy Number (if known)"
+        },
+        "expiryDay":{
+            "value": "",
+            "label": "Expiry Date",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown": true,
+                "isRequired": true
+            },
+            "choices": [
+                "Day",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31"
+            ]
+        },
+        "expiryMonth":{
+            "value": "",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown": true,
+                "isRequired": true
+            },
+            "choices": [
+                "Month",
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "June",
+                "July",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec"
+            ]
+        },
+        "expiryYear":{
+            "value": "",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown": true,
+                "isRequired": true
+            },
+            "choices": [
+                "Year",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016",
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010"
+            ]
+        },
+        "yearsCurrentInsurer": {
+            "value": "",
+            "label": "Years with Current Insurer",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown": true,
+                "isRequired": true
+            },
+            "choices": [
+                "Please Select",
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6+"
+            ]
+        },
+        "buildingCover" : {
+            "value": "",
+            "label": "Building Cover",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "choices" : [
+                "Please Select",
+                "0",
+                "100,000",
+                "110,000",
+                "120,000",
+                "130,000",
+                "140,000",
+                "150,000",
+                "160,000",
+                "170,000",
+                "180,000",
+                "190,000",
+                "200,000",
+                "210,000",
+                "220,000",
+                "230,000",
+                "240,000",
+                "250,000",
+                "260,000",
+                "270,000",
+                "280,000",
+                "290,000",
+                "300,000",
+                "310,000",
+                "320,000",
+                "330,000",
+                "340,000",
+                "350,000",
+                "360,000",
+                "370,000",
+                "380,000",
+                "390,000",
+                "400,000"
+            ],
+            "helpTextTitle": "Amount of Buildings Cover",
+            "helpText": "The full reinstatement cost of the building. This covers the main building of your home, plus fixtures and fittings. Also covers external property, for example garages and patios."
+        },
+        "contentsCover" : {
+            "value": "",
+            "label": "Contents Cover",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "choices" : [
+                "Please Select",
+                "0",
+                "10,000",
+                "15,000",
+                "20,000",
+                "25,000",
+                "30,000",
+                "35,000",
+                "40,000",
+                "45,000",
+                "50,000",
+                "55,000",
+                "60,000",
+                "65,000",
+                "70,000",
+                "75,000",
+                "80,000",
+                "85,000",
+                "90,000",
+                "95,000",
+                "100,000",
+                "110,000",
+                "120,000",
+                "130,000",
+                "140,000",
+                "150,000"
+            ],
+            "helpTextTitle": "Amount of Contents Cover",
+            "helpText": "The total amount of contents that you wish to insure. This covers your household goods, e.g. furniture and valuables within the home. These items must belong to a permanent member of the household."
+        },
+        "Unspecified": {
+            "value": "",
+            "label": "Unspecified Valuable Cover",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown": true,
+                "isRequired": true
+            },
+            "choices": [
+                "Please Select",
+                "0",
+                "1,000",
+                "2,000",
+                "3,000",
+                "4,000",
+                "5,000",
+                "6,000",
+                "7,000",
+                "8,000",
+                "9,000",
+                "10,000"
+            ]
+        },
+        "yearsLiving" : {
+            "value": "",
+            "label": "Years Living at this Address",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "choices" : [
+                "Please Select Year Built",
+                "years"
+            ]
+        },
+        "heatingSystem" : {
+            "value": "",
+            "label": "Heating System",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "choices" : [
+                "Please Select",
+                "Electric",
+                "Gas",
+                "Mixture inc. Oil",
+                "Oil",
+                "Solar/Wind",
+                "Solid Fuel",
+                "Unknown",
+                "Woodchip"
+            ]
+        },
+        "voluntaryExcess" : {
+            "value": "",
+            "label": "Voluntary Excess",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isDropdown" : true,
+                "isRequired": true
+            },
+            "choices" : [
+                "Please Select",
+                "0",
+                "100",
+                "150",
+                "200",
+                "250",
+                "300",
+                "350",
+                "400",
+                "450",
+                "500",
+                "550",
+                "600",
+                "650",
+                "700",
+                "750",
+                "800",
+                "850",
+                "900",
+                "950",
+                "1000"
+            ],
+            "helpTextTitle": "Voluntary Excess",
+            "helpText": "On every household policy there is a standard amount which you must contribute towards the cost of a claim. The insurer pays all the costs over this excess amount. Some insurers will allow you a discount if you are prepared to increase the excess amount on your policy and become liable to cover costs up to this amount yourself"
+        },
+        "smokersLiving": {
+            "value": "",
+            "label": "Are there any smokers living in the property?"
+        },
+        "accidentalDamage": {
+            "value": "",
+            "label": "Include Accidental Damage",
+            "helpTextTitle": "Accidental Damage",
+            "helpText": "Accidental Damage covers an unintentional one-off incident that harms your property or its contents."
+        },
+        "smokeAlarms": {
+            "value": "",
+            "label": "Does the household have 2 or more smoke alarms?"
+        },
+        "securityLocks": {
+            "value": "",
+            "label": "Does the household have security locks?",
+            "helpTextTitle": "Security Locks",
+            "helpText": "All external doors are fitted with a rim lock with deadlock bolt action or a 5 lever mortise deadlock or if the door is UPVC or double glazed a multi point locking system with either a lever or built-in deadlocking cylinder. Patio or French doors must be secured by a multi-point locking system with a lever of cylinder dedadlock or other key-operated vertical security bolts fitted internally at the top and bottom. "
+        },
+        "neighbourWatch": {
+            "value": "",
+            "label": "Does the area have a neighbourhood watch?"
+        },
+        "privacyPolicy": {
+            "label": "Privacy Policy",
+            "value": "false",
+            "valid": false,
+            "touched": false,
+            "className": "form-control",
+            "validationRules": {
+                "isRequired": true,
+                "isCheckbox": true
+            }
+        },
+        "specialOffers": {
+            "value": "",
+            "label": "Special Offers"
+        },
+        "terms": {
+            "value": "false",
+            "label": "Terms and Conditions",
+            "valid": false,
+            "touched": false,
+            "validationRules": {
+                "isRequired": true,
+                "isCheckbox": true
+            }
+        }
+    }
+
+}
